@@ -1,0 +1,8 @@
+temp = int(input("Ingrese la temperatura: "))
+
+if temp < 15:
+    print("Baja")
+elif temp <= 25:
+    print("Normal")
+else:
+    print("Alta")
