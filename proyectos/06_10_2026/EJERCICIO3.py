@@ -1,7 +1,10 @@
-def contar_palabras(texto):
-    limpio = texto.strip()
-    return len(limpio.split())
+def primera_palabra(texto):
+    palabras = texto.split()
+    if palabras:
+        return palabras[0]
+    else:
+        return ""
 
 frase = "Python aplicado a IA"
-cantidad = contar_palabras(frase)
-print(cantidad)
+primera = primera_palabra(frase)
+print(primera)
