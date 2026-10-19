@@ -1,22 +1,22 @@
 lista = [
     {
     "nombre": "Carlos",
-    "edad": "21",
+    "edad": 21,
     "numero": "121212121",
     },
     {
     "nombre": "Juan",
-    "edad": "22",
+    "edad": 22,
     "numero": "121212121",
     },
     {
     "nombre": "Manolo",
-    "edad": "23",
+    "edad": 23,
     "numero": "121212121",
     },
 ]
 
-edad = input("Ingrese la edad: ")
+edad = int(input("Ingrese la edad: "))
 value=0
 for datos in lista:
     if (edad==datos["edad"]):
