@@ -1,0 +1,10 @@
+[
+  {
+    "role": "Lista",
+    "content": "Esto es una lista"
+  },
+  {
+    "role": "Diccionario",
+    "content": "Esto es un diccionario"
+  }
+]
