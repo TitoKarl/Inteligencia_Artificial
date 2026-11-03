@@ -17,3 +17,5 @@ mensajes = [
     {"role" : "Diccionario5","content" : "Esto es un diccionario5" },
 ]
 
+with open("historial.json", "w", encoding="utf-8") as archivo:
+    json.dump(mensajes, archivo, ensure_ascii=False, indent=2)
