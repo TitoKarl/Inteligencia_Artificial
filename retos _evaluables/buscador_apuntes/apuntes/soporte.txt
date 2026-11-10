@@ -1,0 +1,2 @@
+Si el equipo no enciende, revisa el cable.
+Si no hay conexion, reinicia el router.

@@ -18,4 +18,4 @@ mensajes = [
 ]
 
 with open("historial.json", "w", encoding="utf-8") as archivo:
-    json.dump(mensajes, archivo, ensure_ascii=False, indent=2)
+        json.dump(mensajes, archivo, ensure_ascii=False, indent=2)
