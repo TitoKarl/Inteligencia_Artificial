@@ -51,22 +51,61 @@ def buscar(palabra):
     return resultados
 
 
+def bloque(nombre, pares):
+    """Devuelve un objeto JSON con una clave por linea y los valores en una sola linea."""
+    lineas = [
+        f"    {json.dumps(clave, ensure_ascii=False)}: {json.dumps(valor, ensure_ascii=False)}"
+        for clave, valor in pares
+    ]
+
+    if not lineas:
+        return f'  "{nombre}": {{}}'
+
+    return f'  "{nombre}": {{\n' + ",\n".join(lineas) + "\n  }"
+
+
+def escribir_indice(documento):
+    texto = (
+        "{\n"
+        + ",\n".join(
+            [
+                bloque("archivos", documento["archivos"].items()),
+                bloque("indice", sorted(documento["indice"].items())),
+            ]
+        )
+        + "\n}\n"
+    )
+
+    with open(RUTA_INDICE, "w", encoding="utf-8") as archivo:
+        archivo.write(texto)
+
+
 def crear_indice():
+    ids_archivos = {
+        f"hola{numero}": nombre
+        for numero, nombre in enumerate(archivos_txt(), start=1)
+    }
+
     indice = {}
 
-    for nombre in archivos_txt():
+    for id_archivo, nombre in ids_archivos.items():
         ruta = os.path.join(CARPETA, nombre)
         for numero, linea in enumerate(leer_lineas(ruta), start=1):
             for palabra in palabras_de(linea):
                 lugares = indice.setdefault(palabra, [])
-                lugar = [nombre, numero]
+                lugar = f"{id_archivo}.{numero}"
                 if lugar not in lugares:
                     lugares.append(lugar)
 
-    with open(RUTA_INDICE, "w", encoding="utf-8") as archivo:
-        json.dump(indice, archivo, ensure_ascii=False, indent=2)
+    documento = {"archivos": ids_archivos, "indice": indice}
+    escribir_indice(documento)
 
-    return indice
+    return documento
+
+
+def resolver_lugar(documento, lugar):
+    id_archivo, numero = lugar.rsplit(".", 1)
+    return documento["archivos"][id_archivo], int(numero)
 
 
 def cargar_indice():
@@ -79,7 +118,7 @@ def cargar_indice():
 
 
 def main():
-    indice = cargar_indice()
+    documento = cargar_indice()
     print("Buscador de apuntes. Escribe 'salir' para terminar.")
 
     while True:
@@ -90,14 +129,15 @@ def main():
         if not palabra.strip():
             continue
 
-        resultados = indice.get(normalizar(palabra), [])
-        if resultados:
-            for nombre, numero in resultados:
+        lugares = documento["indice"].get(normalizar(palabra), [])
+        if lugares:
+            for lugar in lugares:
+                nombre, numero = resolver_lugar(documento, lugar)
                 print(f"{nombre}, linea {numero}")
         else:
-            print("No aparece")
+            print("Error")
 
-    print("Hasta luego!")
+    print("El programa ha terminado")
 
 
 if __name__ == "__main__":

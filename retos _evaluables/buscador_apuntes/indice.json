@@ -1,220 +1,35 @@
 {
-  "si": [
-    [
-      "soporte.txt",
-      1
-    ],
-    [
-      "soporte.txt",
-      2
-    ]
-  ],
-  "el": [
-    [
-      "soporte.txt",
-      1
-    ],
-    [
-      "soporte.txt",
-      2
-    ]
-  ],
-  "equipo": [
-    [
-      "soporte.txt",
-      1
-    ]
-  ],
-  "no": [
-    [
-      "soporte.txt",
-      1
-    ],
-    [
-      "soporte.txt",
-      2
-    ]
-  ],
-  "enciende": [
-    [
-      "soporte.txt",
-      1
-    ]
-  ],
-  "revisa": [
-    [
-      "soporte.txt",
-      1
-    ]
-  ],
-  "cable": [
-    [
-      "soporte.txt",
-      1
-    ]
-  ],
-  "hay": [
-    [
-      "soporte.txt",
-      2
-    ]
-  ],
-  "conexion": [
-    [
-      "soporte.txt",
-      2
-    ]
-  ],
-  "reinicia": [
-    [
-      "soporte.txt",
-      2
-    ]
-  ],
-  "router": [
-    [
-      "soporte.txt",
-      2
-    ]
-  ],
-  "para": [
-    [
-      "tema3.txt",
-      1
-    ]
-  ],
-  "guardar": [
-    [
-      "tema3.txt",
-      1
-    ]
-  ],
-  "datos": [
-    [
-      "tema3.txt",
-      1
-    ]
-  ],
-  "usamos": [
-    [
-      "tema3.txt",
-      1
-    ]
-  ],
-  "ficheros": [
-    [
-      "tema3.txt",
-      1
-    ]
-  ],
-  "json": [
-    [
-      "tema3.txt",
-      2
-    ],
-    [
-      "tema4.txt",
-      2
-    ]
-  ],
-  "guarda": [
-    [
-      "tema3.txt",
-      2
-    ]
-  ],
-  "listas": [
-    [
-      "tema3.txt",
-      2
-    ]
-  ],
-  "y": [
-    [
-      "tema3.txt",
-      2
-    ]
-  ],
-  "diccionarios": [
-    [
-      "tema3.txt",
-      2
-    ]
-  ],
-  "como": [
-    [
-      "tema3.txt",
-      2
-    ]
-  ],
-  "texto": [
-    [
-      "tema3.txt",
-      2
-    ]
-  ],
-  "un": [
-    [
-      "tema4.txt",
-      1
-    ],
-    [
-      "tema4.txt",
-      2
-    ]
-  ],
-  "entorno": [
-    [
-      "tema4.txt",
-      1
-    ]
-  ],
-  "virtual": [
-    [
-      "tema4.txt",
-      1
-    ]
-  ],
-  "aisla": [
-    [
-      "tema4.txt",
-      1
-    ]
-  ],
-  "los": [
-    [
-      "tema4.txt",
-      1
-    ]
-  ],
-  "paquetes": [
-    [
-      "tema4.txt",
-      1
-    ]
-  ],
-  "mal": [
-    [
-      "tema4.txt",
-      2
-    ]
-  ],
-  "escrito": [
-    [
-      "tema4.txt",
-      2
-    ]
-  ],
-  "provoca": [
-    [
-      "tema4.txt",
-      2
-    ]
-  ],
-  "error": [
-    [
-      "tema4.txt",
-      2
-    ]
-  ]
+  "si": [["soporte.txt", 1], ["soporte.txt", 2]],
+  "el": [["soporte.txt", 1], ["soporte.txt", 2]],
+  "equipo": [["soporte.txt", 1]],
+  "no": [["soporte.txt", 1], ["soporte.txt", 2]],
+  "enciende": [["soporte.txt", 1]],
+  "revisa": [["soporte.txt", 1]],
+  "cable": [["soporte.txt", 1]],
+  "hay": [["soporte.txt", 2]],
+  "conexion": [["soporte.txt", 2]],
+  "reinicia": [["soporte.txt", 2]],
+  "router": [["soporte.txt", 2]],
+  "para": [["tema3.txt", 1]],
+  "guardar": [["tema3.txt", 1]],
+  "datos": [["tema3.txt", 1]],
+  "usamos": [["tema3.txt", 1]],
+  "ficheros": [["tema3.txt", 1]],
+  "json": [["tema3.txt", 2], ["tema4.txt", 2]],
+  "guarda": [["tema3.txt", 2]],
+  "listas": [["tema3.txt", 2]],
+  "y": [["tema3.txt", 2]],
+  "diccionarios": [["tema3.txt", 2]],
+  "como": [["tema3.txt", 2]],
+  "texto": [["tema3.txt", 2]],
+  "un": [["tema4.txt", 1], ["tema4.txt", 2]],
+  "entorno": [["tema4.txt", 1]],
+  "virtual": [["tema4.txt", 1]],
+  "aisla": [["tema4.txt", 1]],
+  "los": [["tema4.txt", 1]],
+  "paquetes": [["tema4.txt", 1]],
+  "mal": [["tema4.txt", 2]],
+  "escrito": [["tema4.txt", 2]],
+  "provoca": [["tema4.txt", 2]],
+  "error": [["tema4.txt", 2]]
 }
