@@ -1,0 +1,1 @@
+No encuentra el arranca porque el buscador solo busca ls palabras exactas que esten escritas y en soporte.txt la idea se explica con "no enciende" pero la palabra "arranca" no aparece y el índice no guarda sinonimos
